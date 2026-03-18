@@ -1,0 +1,47 @@
+<!-- Positioned over the whole 500vh container, ignoring pointer events to let scroll pass to body -->
+<!-- We use 'fixed' so it stays on screen and doesn't scroll naturally -->
+<div class="fixed top-0 left-0 w-full h-[100vh] pointer-events-none z-10 flex flex-col justify-center text-white"
+  [style.opacity]="overlayOpacity()">
+
+  <!-- Section 1 (0% scroll) -->
+  <div class="absolute inset-0 flex flex-col items-end justify-center pr-10 transition-all duration-300 ease-out"
+    [style.opacity]="section1Opacity()" [style.transform]="'translateY(' + section1Y() + 'px)'">
+
+    <h1 class="text-[65px]  font-bold tracking-tighter drop-shadow-2xl text-gray-400 text-right">
+      Prathmesh Patil
+    </h1>
+
+    <p class="text-gray-200 mt-2 text-right text-[20px]">
+      Java Full Stack Developer With AI • Angular • Microservices • AI Automation
+    </p>
+  </div>
+  <!-- Section 2 (30% scroll) -->
+  <div
+    class="absolute inset-0 flex flex-col items-start justify-start pl-[10%] md:pl-[20%] pt-[10%] md:pt-[15%] transition-all duration-300 ease-out"
+    [style.opacity]="section2Opacity()" [style.transform]="'translateY(' + section2Y() + 'px)'">
+
+    <h2 class="text-5xl text-[40px] font-bold max-w-2xl drop-shadow-xl">
+      Building Scalable Web & AI-Driven Systems
+    </h2>
+
+    <p class="mt-4 text-[25px]  text-gray-300 max-w-xl leading-relaxed">
+      I build scalable full-stack applications with
+      <span class="text-blue-400 font-semibold">Java</span>,
+      <span class="text-green-400 font-semibold">Spring Boot</span>,
+      <span class="text-pink-400 font-semibold">Angular</span>, and
+      <span class="text-yellow-400 font-semibold">Microservices</span>,
+      securing systems with
+      <span class="text-red-400 font-semibold">Spring Security</span> and leveraging
+      <span class="text-purple-400 font-semibold">AI Agents</span> to automate real-world workflows.
+    </p>
+  </div>
+
+  <!-- Section 3 (60% scroll) -->
+  <div class="absolute inset-0 flex items-center justify-end pr-[10%] md:pr-[20%] transition-all duration-300 ease-out"
+    [style.opacity]="section3Opacity()" [style.transform]="'translateY(' + section3Y() + 'px)'">
+    <h2 class="text-5xl md:text-7xl font-bold max-w-2xl text-right drop-shadow-xl">
+      Bridging design &<br />engineering.
+    </h2>
+  </div>
+
+</div>
