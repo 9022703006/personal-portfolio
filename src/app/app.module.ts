@@ -7,6 +7,7 @@ import { ScrollyCanvasComponent } from './scrolly-canvas/scrolly-canvas.componen
 import { OverlayComponent } from './overlay/overlay.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { EducationComponent } from './education/education.component';
+import { ExperienceComponent } from './experience/experience.component';
 import { PersonDetailsComponent } from './person-details/person-details.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,8 +17,9 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     ScrollyCanvasComponent,
     OverlayComponent,
-    ProjectsComponent,
     EducationComponent,
+    ExperienceComponent,
+    ProjectsComponent,
     PersonDetailsComponent,
     NavbarComponent,
     FooterComponent

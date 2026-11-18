@@ -1,0 +1,39 @@
+.card3d {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card3d:hover {
+  transform: rotateX(8deg) rotateY(-10deg) scale(1.05);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+}
+
+/* image parallax depth */
+.card3d img {
+  transform: translateZ(0);
+  transition: transform 0.6s ease;
+}
+
+.card3d:hover img {
+  transform: translateZ(40px) scale(1.1);
+}
+.card3d::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.15),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+
+.card3d:hover::before {
+  opacity: 1;
+}

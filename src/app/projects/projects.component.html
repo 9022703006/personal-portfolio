@@ -1,37 +1,216 @@
-<section
-  class="relative w-full min-h-screen bg-[#121212] flex flex-col items-center justify-center py-24 px-6 sm:px-12 md:px-24">
+<section id="projects"
+  class="relative w-full min-h-screen bg-[#121212] flex flex-col items-center justify-center py-24 px-6 sm:px-10 lg:px-12">
 
-  <div class="max-w-7xl w-full mb-16 text-center md:text-left">
+  <div class="max-w-7xl xl:max-w-[1536px] w-full mb-12 text-center md:text-left">
     <h3 class="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">Featured Work</h3>
     <div class="h-1 w-24 bg-white/20 rounded-full mx-auto md:mx-0"></div>
   </div>
 
-  <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <!-- 4-column x 2-row desktop layout (4 cards per row), responsive on tablet and mobile -->
+  <div class="max-w-7xl xl:max-w-[1536px] w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-    <!-- Project Card 1 -->
+    <!-- Project Card 1: Prathmesh – AI Resume Assistant -->
     <div
-      class="group relative rounded-2xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:-translate-y-2 hover:bg-white/10 cursor-pointer">
+      class="group card3d relative rounded-2xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-500 cursor-pointer flex flex-col">
       <div class="aspect-video w-full bg-[#1a1a1a] overflow-hidden flex items-center justify-center">
-        <!-- Placeholder for project image -->
-        <div class="aspect-video w-full bg-[#1a1a1a] overflow-hidden">
-          <img src="assets/photo/Loan.jpg" alt="AI Livestock Platform"
-            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+        <img src="assets/photo/resumechat.png" alt="Prathmesh – AI Resume Assistant"
+          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+      </div>
+      <div class="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <p class="text-xs tracking-widest text-gray-400 uppercase mb-2">Conversational AI</p>
+          <h4 class="text-xl font-bold text-white mb-3 transition-colors group-hover:text-teal-300">
+            Prathmesh – AI Resume Assistant
+          </h4>
+          <div class="flex flex-wrap gap-1.5 mt-3">
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">AI Copilot</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">RAG Architecture</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Conversational AI</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Resume Intelligence</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Angular</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">TypeScript</span>
+          </div>
+        </div>
+        <div class="flex gap-4 mt-5 relative z-10 flex-wrap">
+          <a href="https://prathmesh-resume-frontend.hostless.site/" target="_blank"
+            class="text-blue-400 text-sm hover:underline">
+            🌐 Live
+          </a>
+          <a href="https://github.com/9022703006/Prathmesh-AI-Resume-Assistant" target="_blank"
+            class="text-green-400 text-sm hover:underline">
+            💻 GitHub
+          </a>
         </div>
       </div>
-      <div class="p-8">
-        <p class="text-sm tracking-widest text-gray-400 uppercase mb-2">AI + Backend System</p>
-        <h4 class="text-2xl font-bold text-white mb-4 transition-colors group-hover:text-blue-300">Loan Management
-          System with AI Integration (Microservices Architecture):
-        </h4>
-        <div class="flex flex-wrap gap-2 mt-4">
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">Java</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">Spring Boot</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">Angular</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">Microservices</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">Spring Security</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">AI Integration</span>
+    </div>
+
+    <!-- Project Card 2: Personal Portfolio Website -->
+    <div
+      class="group card3d relative rounded-2xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-500 cursor-pointer flex flex-col">
+      <div class="aspect-video w-full bg-[#1a1a1a] overflow-hidden flex items-center justify-center">
+        <img src="assets/photo/Portfolio.png" alt="Personal Portfolio Website"
+          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+      </div>
+      <div class="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <p class="text-xs tracking-widest text-gray-400 uppercase mb-2">Frontend & Portfolio</p>
+          <h4 class="text-xl font-bold text-white mb-3 transition-colors group-hover:text-cyan-300">
+            Personal Portfolio Website
+          </h4>
+          <div class="flex flex-wrap gap-1.5 mt-3">
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Angular</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">TypeScript</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Tailwind CSS</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">HTML5/CSS3</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Canvas Animation</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Responsive UI</span>
+          </div>
         </div>
-        <div class="flex gap-4 mt-6">
+        <div class="flex gap-4 mt-5 relative z-10 flex-wrap">
+          <a href="https://personal-portfolio-eltm.onrender.com/" target="_blank"
+            class="text-blue-400 text-sm hover:underline">
+            🌐 Live
+          </a>
+          <a href="https://github.com/9022703006/personal-portfolio" target="_blank"
+            class="text-green-400 text-sm hover:underline">
+            💻 GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 3: AI-Powered B2B Commodity Marketplace Assistant -->
+    <div
+      class="group card3d relative rounded-2xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-500 cursor-pointer flex flex-col">
+      <div class="aspect-video w-full bg-[#1a1a1a] overflow-hidden flex items-center justify-center">
+        <img src="assets/photo/B2B_Commodity.png" alt="AI-Powered B2B Commodity Marketplace Assistant"
+          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+      </div>
+      <div class="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <p class="text-xs tracking-widest text-gray-400 uppercase mb-2">AI Assistant / B2B Marketplace</p>
+          <h4 class="text-xl font-bold text-white mb-3 transition-colors group-hover:text-amber-300">
+            AI-Powered B2B Commodity Marketplace Assistant
+          </h4>
+          <div class="flex flex-wrap gap-1.5 mt-3">
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">AI Agents</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">LLM Integration</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">B2B Marketplace</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Workflow Automation</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">TypeScript</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">REST APIs</span>
+          </div>
+        </div>
+        <div class="flex gap-4 mt-5 relative z-10 flex-wrap">
+          <a href="https://commodity-ui-m42u.onrender.com/" target="_blank"
+            class="text-blue-400 text-sm hover:underline">
+            🌐 View Project
+          </a>
+          <a href="https://github.com/orgs/TradeX-Marketplace/people/9022703006" target="_blank"
+            class="text-green-400 text-sm hover:underline">
+            💻 GitHub Repository
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 4: AI Workflow Automation Hub -->
+    <div
+      class="group card3d relative rounded-2xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-500 cursor-pointer flex flex-col">
+      <div class="aspect-video w-full bg-[#1a1a1a] overflow-hidden flex items-center justify-center">
+        <img src="assets/photo/orderflow-ai.png" alt="AI Workflow Automation Hub"
+          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+      </div>
+      <div class="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <p class="text-xs tracking-widest text-gray-400 uppercase mb-2">AI Automation</p>
+          <h4 class="text-xl font-bold text-white mb-3 transition-colors group-hover:text-emerald-300">
+            AI Workflow Automation Hub
+          </h4>
+          <div class="flex flex-wrap gap-1.5 mt-3">
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">N8N</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Workflow Automation</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">AI Agents</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">API Integration</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Node.js</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Process Optimization</span>
+          </div>
+        </div>
+        <div class="flex gap-3 mt-5 relative z-10 flex-wrap">
+          <a href="https://drive.google.com/file/d/1baOTs2UaaMDBxoM_K2cm6yAHpkOrgc_i/view?usp=sharing" target="_blank"
+            class="text-blue-400 text-sm hover:underline">
+            ⚡ Open Workflow 1
+          </a>
+          <a href="https://drive.google.com/file/d/1Rn9OcGqzb6BkWsA4z_AwDEdLUXxih6kL/view?usp=sharing" target="_blank"
+            class="text-blue-400 text-sm hover:underline">
+            ⚡ Open Workflow 2
+          </a>
+          <a href="https://drive.google.com/file/d/1f1qSMn1nszM8x7ciXWPFYQXs0wRetf0k/view?usp=sharing" target="_blank"
+            class="text-blue-400 text-sm hover:underline">
+            ⚡ Open Workflow 3
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 5: AI-Powered Order Management & Workflow Automation System -->
+    <div
+      class="group card3d relative rounded-2xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-500 cursor-pointer flex flex-col">
+      <div class="aspect-video w-full bg-[#1a1a1a] overflow-hidden flex items-center justify-center">
+        <img src="assets/photo/order.png" alt="AI-Powered Order Management & Workflow Automation System"
+          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+      </div>
+      <div class="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <p class="text-xs tracking-widest text-gray-400 uppercase mb-2">Enterprise AI System</p>
+          <h4 class="text-xl font-bold text-white mb-3 transition-colors group-hover:text-indigo-300">
+            AI-Powered Order Management & Workflow Automation System
+          </h4>
+          <div class="flex flex-wrap gap-1.5 mt-3">
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Spring Boot</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Java</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">AI Automation</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Order Management</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Microservices</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">REST APIs</span>
+          </div>
+        </div>
+        <div class="flex gap-4 mt-5 relative z-10 flex-wrap">
+          <a href="https://orderflow-ai-frontend.onrender.com/login" target="_blank"
+            class="text-blue-400 text-sm hover:underline">
+            🌐 View Project
+          </a>
+          <a href="https://github.com/9022703006/orderflow-ai" target="_blank"
+            class="text-green-400 text-sm hover:underline">
+            💻 GitHub Repository
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 6: Loan Management System with AI Integration -->
+    <div
+      class="group card3d relative rounded-2xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-500 cursor-pointer flex flex-col">
+      <div class="aspect-video w-full bg-[#1a1a1a] overflow-hidden flex items-center justify-center">
+        <img src="assets/photo/Loan.jpg" alt="Loan Management System with AI Integration"
+          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+      </div>
+      <div class="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <p class="text-xs tracking-widest text-gray-400 uppercase mb-2">AI + Backend System</p>
+          <h4 class="text-xl font-bold text-white mb-3 transition-colors group-hover:text-blue-300">
+            Loan Management System with AI Integration
+          </h4>
+          <div class="flex flex-wrap gap-1.5 mt-3">
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Java</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Spring Boot</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Angular</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Microservices</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Spring Security</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">AI Integration</span>
+          </div>
+        </div>
+        <div class="flex gap-4 mt-5 relative z-10">
           <a href="https://github.com/9022703006/Loan_Management_System_-Bankend-Java-SpringBoot-/tree/LoanApplication/Spring_Projects_Loans_Management_System/src/main/java/com/company_name" target="_blank"
             class="text-green-400 text-sm hover:underline">
             💻 GitHub
@@ -40,32 +219,31 @@
       </div>
     </div>
 
-    <!-- Project Card 2 -->
+    <!-- Project Card 7: AI-Enabled Livestock & Cow Farm Management Platform -->
     <div
-      class="group relative rounded-2xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:-translate-y-2 hover:bg-white/10 cursor-pointer">
+      class="group card3d relative rounded-2xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-500 cursor-pointer flex flex-col">
       <div class="aspect-video w-full bg-[#1a1a1a] overflow-hidden flex items-center justify-center">
-        <!-- Placeholder for project image -->
-        <div class="aspect-video w-full bg-[#1a1a1a] overflow-hidden">
-          <img src="assets/photo/farmmart.jpg" alt="AI Livestock Platform"
-            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-        </div>
+        <img src="assets/photo/farmmart.jpg" alt="AI-Enabled Livestock & Cow Farm Management Platform"
+          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
       </div>
-      <div class="p-8">
-        <p class="text-sm tracking-widest text-gray-400 uppercase mb-2">E-Commerce</p>
-        <h4 class="text-2xl font-bold text-white mb-4 transition-colors group-hover:text-purple-300">AI-Enabled
-          Livestock & Farm Management Platform
-        </h4>
-        <div class="flex flex-wrap gap-2 mt-4">
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">Buy & Sell Livestock</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">Cattle Marketplace</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">Cow, Sheep, Poultry Trading</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">Farmer-to-Farmer Platform</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">Animal Listings & Profiles</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">Price & Breed Details</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">Search & Filter Animals</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">Secure Transactions</span>
+      <div class="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <p class="text-xs tracking-widest text-gray-400 uppercase mb-2">E-Commerce</p>
+          <h4 class="text-xl font-bold text-white mb-3 transition-colors group-hover:text-purple-300">
+            AI-Enabled Livestock & Cow Farm Management Platform
+          </h4>
+          <div class="flex flex-wrap gap-1.5 mt-3">
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Buy & Sell Livestock</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Cattle Marketplace</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Cow, Sheep, Poultry Trading</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Farmer-to-Farmer Platform</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Animal Listings & Profiles</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Price & Breed Details</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Search & Filter Animals</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Secure Transactions</span>
+          </div>
         </div>
-        <div class="flex gap-4 mt-6">
+        <div class="flex gap-4 mt-5 relative z-10">
           <a href="https://e-commerance-farmmarts.onrender.com" target="_blank"
             class="text-blue-400 text-sm hover:underline">
             🌐 Live
@@ -78,28 +256,29 @@
       </div>
     </div>
 
-    <!-- Project Card 3 -->
+    <!-- Project Card 8: AI Voice Resume Assistant -->
     <div
-      class="group relative rounded-2xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:-translate-y-2 hover:bg-white/10 cursor-pointer">
+      class="group card3d relative rounded-2xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-500 cursor-pointer flex flex-col">
       <div class="aspect-video w-full bg-[#1a1a1a] overflow-hidden flex items-center justify-center">
-        <div class="aspect-video w-full bg-[#1a1a1a] overflow-hidden">
-          <img src="assets/photo/Ai_Resume_images.jpg" alt="AI Livestock Platform"
-            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-        </div>
+        <img src="assets/photo/Ai_Resume_images.jpg" alt="AI Voice Resume Assistant"
+          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
       </div>
-      <div class="p-8">
-        <p class="text-sm tracking-widest text-gray-400 uppercase mb-2">Voice AI System</p>
-        <h4 class="text-2xl font-bold text-white mb-4 transition-colors group-hover:text-pink-300">AI Voice Resume
-          Assistant</h4>
-        <div class="flex flex-wrap gap-2 mt-4">
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">Vapi.ai</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">AI Agents</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">Voice AI</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">JavaScript</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">Web Integration</span>
-          <span class="text-xs bg-white/10 px-2 py-1 rounded">N8N</span>
+      <div class="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <p class="text-xs tracking-widest text-gray-400 uppercase mb-2">Voice AI System</p>
+          <h4 class="text-xl font-bold text-white mb-3 transition-colors group-hover:text-pink-300">
+            AI Voice Resume Assistant
+          </h4>
+          <div class="flex flex-wrap gap-1.5 mt-3">
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Vapi.ai</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">AI Agents</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Voice AI</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">JavaScript</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">Web Integration</span>
+            <span class="text-xs bg-white/10 px-2 py-1 rounded">N8N</span>
+          </div>
         </div>
-        <div class="flex gap-4 mt-6">
+        <div class="flex gap-4 mt-5 relative z-10">
           <a href="https://vapi.ai/?demo=true&shareKey=5d628b9e-1749-42fc-9b87-e2f17b8a8a24&assistantId=3330cfd5-eb0c-48f3-b503-32af95943f79"
             target="_blank" class="text-blue-400 text-sm hover:underline">
             🌐 Live
@@ -107,6 +286,7 @@
         </div>
       </div>
     </div>
+
   </div>
 
 </section>

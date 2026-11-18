@@ -12,9 +12,10 @@ export class NavbarComponent {
 
   navLinks = [
     { name: 'Home', target: 'home' },
-    { name: 'Projects', target: '/projects' },
-    { name: 'Education', target: '/education-info' },
-    { name: 'Contact Us', target: '/person-details' }
+    { name: 'Education', target: 'education' },
+    { name: 'Experience', target: 'experience' },
+    { name: 'Projects', target: 'projects' },
+    { name: 'Contact Us', target: 'contact' }
   ];
 
   toggleMenu() {
@@ -24,7 +25,7 @@ export class NavbarComponent {
   // Scroll spy to highlight active section
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const sections = ['home', 'projects', 'education', 'contact'];
+    const sections = ['home', 'education', 'experience', 'projects', 'contact'];
     const scrollPosition = window.pageYOffset + 100;
     this.isScrolled = window.scrollY > 50;
 
